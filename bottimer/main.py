@@ -1,10 +1,10 @@
 import datetime
 import threading
 import telebot
-import creds
+import token
 
 
-bot = telebot.TeleBot(token=creds.TOKEN)
+bot = telebot.TeleBot(token=token.TOKEN)
 
 
 @bot.message_handler(commands=['start'])
